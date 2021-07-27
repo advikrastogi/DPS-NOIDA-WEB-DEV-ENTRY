@@ -1,0 +1,20 @@
+.first {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 100px;
+    font-family: 'Caveat Brush', cursive;
+    white-space: nowrap;
+    animation: starting 3s linear; 
+  }
+  
+  @keyframes starting {
+    from {
+      width: 0;
+    }
+    to {
+      width: 1250px;
+    }
+  }
