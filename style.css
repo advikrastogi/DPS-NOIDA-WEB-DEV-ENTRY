@@ -1,13 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 .first {
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: 50px;
     left: 16px;
     display: inline-block;
     overflow: hidden;
-    font-size: 100px;
-    font-family: 'Caveat Brush', cursive;
+    padding-bottom: 130px;
+    font-size: 180px;
+    font-family: 'Euphoria Script', cursive;
     white-space: nowrap;
+    text-align: center;    
     animation: starting 3s linear; 
+  }
+  .container{
+   background-color:  #f8d9d6;
   }
   
   @keyframes starting {
@@ -15,6 +27,102 @@
       width: 0;
     }
     to {
-      width: 1250px;
+      width: 985px;
     }
   }
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+.image {
+  float: right;
+  flex-basis: 40%;  
+  max-width: 100%;
+  padding-right: 50px;
+}
+.intro{
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  padding-top: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.base {
+  position: relative;
+  width: 700px;
+}
+
+.pics {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-base {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
