@@ -9,8 +9,15 @@
 <link rel="shortcut icon" href="brain.png" type="image/x-icon">
 <title>Mental Milestone</title>
  </head>
-
 <body>
+       <nav>
+              <label class="logo">Mental Milestone</label>
+              <ul>
+                <li><a  class="active" href="#">Home</a></li>
+                <li><a href="merch.html">Merchandise</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+              </ul>
+          </nav>
 <div class="container">
  <img class ="image"src="brain.png" width="25%">
  <h1 class="first">Mental Milestone</h1> </div>
@@ -25,15 +32,15 @@
 </div>
 </div>
 <!--Second text section-->
-<div class="body">
+<div class="body" >
  <div class="text">
 <h1 class="intro" style="font-size: 50px;">World Mental Health Day</h1>      
  <p class="intro">World Mental Health Day is an international day for global mental health education, awareness and advocacy against social stigma. It was first celebrated in 1992 at the initiative of the World Federation for Mental Health, a global mental health organization with members and contacts in more than 150 countries.</p>
 </div>
  <div class="image">
- <img src="health_Day.png" style="width: 150%;">
+ <img src="health_Day.png">
 </div>
- </div>
+ </div> <br> <br>
   <!--Third text section-->
 <div class="body">
 <div class="image">
@@ -49,100 +56,8 @@
        <li> keep active and eat well.</li>
        <li> develop new skills and challenge your capabilities.</li>
        <li>relax and enjoy your hobbies.</li>
-       <li> set realistic goals.</li>
+       <li> set realistic goals.</li> </ul>
 </div>
- </div> <Br> <br> <br>
- <h2 style="text-align: center">PEOPLE WHO CAME OVER THIS </h2>
-
-<div class="base">
-  <div class="pics">
-    <div class="numbertext">1 / 6</div>
-    <img src="jake.jpg" style="width:100%">
-  </div>
-
-  <div class="pics">
-    <div class="numbertext">2 / 6</div>
-    <img src="emilie.png" style="width:100%">
-  </div>
-
-  <div class="pics">
-    <div class="numbertext">3 / 6</div>
-    <img src="jason.jpg" style="width:100%">
-  </div>
-    
-  <div class="pics">
-    <div class="numbertext">4 / 6</div>
-    <img src="carlos.jpg" style="width:100%">
-  </div>
-
-  <div class="pics">
-    <div class="numbertext">5 / 6</div>
-    <img src="Hannah.jpg" style="width:100%">
-  </div>
-    
-  <div class="pics">
-    <div class="numbertext">6 / 6</div>
-    <img src="anna.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-base">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="jake.jpg" style="width:100%" onclick="currentSlide(1)" alt="jake">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="emilie.png" style="width:100%" onclick="currentSlide(2)" alt="emilie">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="jason.jpg" style="width:100%" onclick="currentSlide(3)" alt="jason">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="carlos.jpg" style="width:100%" onclick="currentSlide(4)" alt="carlos">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Hannah.jpg" style="width:100%" onclick="currentSlide(5)" alt="Hannah">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="anna.jpg" style="width:100%" onclick="currentSlide(6)" alt="anna">
-    </div>
-  </div>
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("pics");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
+ </div> 
 </body>
 </html>
